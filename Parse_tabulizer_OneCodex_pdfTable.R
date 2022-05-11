@@ -26,6 +26,10 @@ df3
 write.csv(df3, file = "sample_out.csv") #Rename output csv file as suits
 
 ##Interact with table (don't select column headers)
+#install.packages(c("shiny","miniUI"))
+library(shiny)
+library(miniUI)
+
 extract_areas('SCov2_10_6_NPS8PX.fastq.gz.report.pdf', pages = 1:2)
 
 #By page
